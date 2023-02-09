@@ -3,7 +3,7 @@ to have the same style*/
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
-    padding: 20px;
+    padding: 20px; /*It also exists padding-left, padding-right, etc.*/
 }
   
 h1 {
@@ -31,13 +31,13 @@ h1, h2, p {
   background-color: burlywood;
   margin-left: auto; /*How to center an element (1)*/
   margin-right: auto; /*How to center an element (2)*/
-  padding: 20px;
+  padding: 20px; /*Area between its content and its border*/
   max-width: 500px;
 }
   
 img {
   margin-top: -25px;
-  display: block;
+  display: block; /*It means that the content is goint to start in a new line and takes the screen width available*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,7 +57,7 @@ h1, h2 {
 }
   
 .item p {
-  display: inline-block;
+  display: inline-block; /* The elements can behave as inline elements*/
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
@@ -81,4 +81,24 @@ footer {
   
 .address {
   margin-bottom: 5px;
+}
+
+/*Style for <a> tag*/
+a {
+    color: black;
+  }
+  
+/*Style when it's visited*/
+a:visited {
+  color: black;
+}
+  
+/*Style when it's hovered*/
+a:hover {
+  color: brown;
+}
+  
+/*Style when it's active*/
+a:active {
+  color: brown;
 }
