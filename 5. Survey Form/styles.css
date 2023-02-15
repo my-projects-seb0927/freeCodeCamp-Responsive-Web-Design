@@ -1,0 +1,89 @@
+/*
+Palette of colors:
+#7286D3
+#8EA7E9
+#E5E0FF
+#FFF2F2
+*/
+body {
+    background-color: #FFF2F2;
+    font-family: sans-serif;
+    padding: 20px
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  h1, p{
+    text-align: center;
+  }
+  
+  h2{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  form {
+    width: 80vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+  
+  input, textarea, select {
+    margin: 3px 3px 0 0;
+    width: 100%;
+    border: 1px solid #8EA7E9;
+    background-color: #E5E0FFAA;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 3px dotted #7286D3
+  }
+  
+  fieldset:first-of-type{
+    padding-top: 0;
+    border-top: 3px dotted #7286D3;
+  }
+  
+  fieldset:last-of-type{
+    border: none;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2.5em;
+    font-size: 0.95rem;
+    background-color: #E5E0FF77;
+    min-width: 250px;
+  }
+  
+  
+  
+  

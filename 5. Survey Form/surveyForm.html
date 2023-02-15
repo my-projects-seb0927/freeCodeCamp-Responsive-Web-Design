@@ -8,16 +8,21 @@
 
   <body>
     <h1 id="title">Survey form</h1>
-    <p id="description">Thank you for filling this survey form!</p>
+    <p id="description">Thank you for filling this survey form! This helps us to improve our presentations</p>
 
     <form id="survey-form">
+
+      <fieldset>
       <!--Name-->
       <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Insert your name" required/></label>
       <!--Email-->
       <label id="email-label" for="email">Email: <input id="email" type="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="Insert your email" required/></label>
       <!--Number-->
-      <label id="number-label" for="number">Number (Age): <input id="number" type="number" pattern="^[0-9]*$" min="13" max="120" placeholder="Insert a number"/></label>
-      <label for="dropdown">How do you rate the presentation?
+      <label id="number-label" for="number">Number (Age): <input id="number" type="number" pattern="^[0-9]*$" min="13" max="120" placeholder="Insert your age"/></label>
+      </fieldset>
+
+      <fieldset>
+      <label for="dropdown"> <h2 id=>How do you rate the meeting:</h2>
         <select id="dropdown" name="dropdown">
           <option value="">(Select one of the options)</option>
           <option value="1">Bad</option>
@@ -27,20 +32,23 @@
           <option value="5">I loved it</option>
         </select>
       </label>
+      
+      <h2>How did you attend the meeting?</h2>
+      <label for="virtual-meeting"><input id="virtual-meeting" value="virtual-meeting" type="radio" name="type-meeting" class="inline"/>Virtual meeting</label>
+      <label for="person-meeting"><input id="person-meeting" value="person-meeting" type="radio" name="type-meeting" class="inline"/>Person meeting</label>
 
-      <label for="virtual-meeting"><input id="virtual-meeting" value="virtual-meeting" type="radio" name="type-meeting"/>Virtual meeting</label>
-      <label for="person-meeting"><input id="person-meeting" value="person-meeting" type="radio" name="type-meeting"/>Person meeting</label>
+      <h2>What were your interestings?</h2>
+      <label for="new-software"><input id="new-software" name="interests" value="new-software" type="checkbox" class="inline"/>New software</label>
+      <label for="software-updtes"><input id="software-updates" name="interests" value="software-updates" type="checkbox" class="inline"/>Software updates</label>
+      </fieldset>
 
-      <input id="new-software" name="interests" value="new-software" type="checkbox"/><label for="new-software">New software</label>
-
-      <input id="software-updates" name="interests" value="software-updates" type="checkbox"/><label for="software-updtes">Software updates</label>
-
-      <label for="additional-comments"> Any additional comment about the presentation?
+      <fieldset>
+      <label for="additional-comments"> <h2>Any additional comments about the presentation?</h2>
         <textarea></textarea>
       </label>
-      <input id="submit" name="submit" type="submit" value="Submit"/>
+      </fielset>
 
-      
+      <input id="submit" name="submit" type="submit" value="Submit"/>    
     </form>
   </body>
 </html>
