@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Thank you for filling this survey form!</p>
+
+    <form id="survey-form">
+      <!--Name-->
+      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Insert your name" required/></label>
+      <!--Email-->
+      <label id="email-label" for="email">Email: <input id="email" type="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="Insert your email" required/></label>
+      <!--Number-->
+      <label id="number-label" for="number">Number (Age): <input id="number" type="number" pattern="^[0-9]*$" min="13" max="120" placeholder="Insert a number"/></label>
+      <label for="dropdown">How do you rate the presentation?
+        <select id="dropdown" name="dropdown">
+          <option value="">(Select one of the options)</option>
+          <option value="1">Bad</option>
+          <option value="2">It could've been better</option>
+          <option value="3">It was ok</option>
+          <option value="4">It was pretty good</option>
+          <option value="5">I loved it</option>
+        </select>
+      </label>
+
+      <label for="virtual-meeting"><input id="virtual-meeting" value="virtual-meeting" type="radio" name="type-meeting"/>Virtual meeting</label>
+      <label for="person-meeting"><input id="person-meeting" value="person-meeting" type="radio" name="type-meeting"/>Person meeting</label>
+
+      <input id="new-software" name="interests" value="new-software" type="checkbox"/><label for="new-software">New software</label>
+
+      <input id="software-updates" name="interests" value="software-updates" type="checkbox"/><label for="software-updtes">Software updates</label>
+
+      <label for="additional-comments"> Any additional comment about the presentation?
+        <textarea></textarea>
+      </label>
+      <input id="submit" name="submit" type="submit" value="Submit"/>
+
+      
+    </form>
+  </body>
+</html>
