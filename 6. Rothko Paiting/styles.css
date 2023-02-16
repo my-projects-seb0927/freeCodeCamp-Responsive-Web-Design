@@ -14,14 +14,14 @@
     height: 600px; /*And the height*/
     background-color: #4d0f00; /* and the background-color of our div*/
     overflow: hidden; /*With the hidden value, the overflow is clipped, and the rest of the content is hidden. Especially when something is pushing out of borders*/
-    filter: blur(2px);
+    filter: blur(2px); /*This let us blur what we have inside the canvas*/
 }
 
 .frame {
     border: 50px solid black;
     width: 500px;
     padding: 50px;
-    margin: 20px auto;
+    margin: 20px auto; /*So our frame only pushes horizontally in order to be in the center*/
 }
 
 .one {
@@ -29,9 +29,9 @@
     height: 150px;
     background-color: #efb762;
     margin: 20px auto;
-    box-shadow: 0 0 3px 3px #efb762;
-    border-radius: 9px;
-    transform: rotate(-0.6deg);
+    box-shadow: 0 0 3px 3px #efb762; /*We soft the edges of our squares*/
+    border-radius: 9px; /*We add a border radius to our squares*/
+    transform: rotate(-0.6deg); /*We rotate them a little bit*/
 }
 
 .two {
