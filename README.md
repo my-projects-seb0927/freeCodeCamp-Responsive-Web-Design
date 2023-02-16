@@ -4,4 +4,4 @@ Welcome! Here you are going to find the code from the "Responsive Web Design" ma
 Also, this is the course if you want to do it too: [Here](https://www.freecodecamp.org/learn/2022/responsive-web-design/) -(˘▾˘-)
 
 
-*Made by:* @Seb0927
+*Made by:* @Seb0927 (WIP)
