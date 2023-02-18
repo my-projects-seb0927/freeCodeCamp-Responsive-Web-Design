@@ -1,0 +1,16 @@
+/*
+7. Normalize my box-model by creating a * selector and setting the box-sizing property to border-box as the value.
+8. We can create a .gallery img selector to target all the <img> within .gallery div.
+9. The body doesn't have any margin.
+10. We use text transform so our font sets itself as uppercase.
+11. Introduction of flexbox: It's a one-dimensonial CSS layout that can control the way items are spaced out and aligned within a container. We added with "display: flex"
+12. "flex-direction" property helps us to define how do we want our main-axis (The POV of how we are going to organize our photos. They can be: row, row-reverse, column and column-reverse 
+13. "flex-wrap" property helps us to determine how our flex items behave when the flex container is too small. There are two options: wrap and nowrap.
+14. "justify-content" property helps us to determine how the items inside a flex container are positioned along the main axis.
+15. "align-items" property positions the flex content along the cross axis (In the center, on the left, etc.)
+17. "object-fit" property determine how images should behave. What cover does is to crop the pictures so they can keep their aspecto-ratio
+18. "gap" property sets the gaps between rows and columns.
+20. "after" pseudo-element creates an element tha is the last child of the selected element. With it, we can create an object with specific properties like "width" or "height", etc.
+
+
+*/
