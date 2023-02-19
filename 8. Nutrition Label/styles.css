@@ -1,3 +1,118 @@
 /*
 5. The link in the head imports the Open Sans font family with the weigth values 400, 700 and 800
+12. font-weight helps to bolder the text
+18. letter-spacing property adjusts the space betwen each character of text in an element.
+22. the span tag helps to apply styles to a same line of text inside a div. So I can apply two styles with no interruption.
+23. We basically created a flex table for the serving size.
+26. I can apply two styles to the same tag using spaces.
+31. rem basically is the percentage of the font-size of the HTML.
+34. align-items: flex-end means that the items are going to be organized from the bottom to the top.
+41. So it seems we are using flex-end now...
+45. span tags are used here to align to the table like a flex-table
+49. The pseudo-selector of ":not" let me select all the elements that don't match the given CSS rule.
+51. The "i" tag italicize text
 */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px
+}
+
+p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.large {
+    height: 10px;
+}
+
+.large,
+.medium {
+    background-color: black;
+    border: 0;
+}
+
+.medium {
+    height: 5px;
+}
+
+.small-text {
+    font-size: 0.85rem;
+}
+
+
+.calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.calories-info h2 {
+    margin: 0;
+}
+
+.left-container p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.calories-info span {
+    margin: -7px -2px;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.double-indent {
+    margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
+}
