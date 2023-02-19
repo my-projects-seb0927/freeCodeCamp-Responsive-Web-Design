@@ -13,19 +13,19 @@
 20. "after" pseudo-element creates an element tha is the last child of the selected element. With it, we can create an object with specific properties like "width" or "height", etc.
 */
 
-* {
+* { /*This is a universal selector. It applies all the properties here to all the elements*/
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+    margin: 0; 
     font-family: sans-serif;
     background: #f5f6f7;
 }
 
 .header {
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase; /*So our font appears uppercase*/
     padding: 32px;
     background-color: #0a0a23;
     color: #fff;
@@ -33,17 +33,20 @@ body {
 }
 
 .gallery {
+    /*Our display is going to be flex-box.
+     It's a one-dimensonial CSS layout that can control the way items are spaced out and aligned within a container*/
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    flex-direction: row; /*It defines how do we want our main-axis (The POV of how we are going to organize our photos)*/
+    flex-wrap: wrap; /*How our flex items behave when the flex container is too small. In this case the items are going to continue in the next row*/
+    justify-content: center; /*So our gallery keeps in the center of the website*/
+    align-items: center; /*So our items keep in the center of their position*/
+    gap: 16px; /*Space between items*/
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px 10px;
 }
 
+/* This selector applies all the properties to the "img" tags inside the ".gallery" div */
 .gallery img {
     width: 100%;
     max-width: 350px;
@@ -52,6 +55,7 @@ body {
     border-radius: 10px;
 }
 
+/* It creates an element tha is the last child of the selected element. With it, we can create an object with specific properties like "width" or "height", etc. */
 .gallery::after {
     content: "";
     width: 350px;
