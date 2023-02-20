@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Nutrition Label</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet"> <!--This link imports the Open Sans font family with the weigth values 400, 700 and 800-->
     <link href="./styles.css" rel="stylesheet">
 </head>
 
@@ -26,11 +26,15 @@
         </div>
         <div class="divider medium"></div>
         <div class="daily-value small-text">
+            <!--Take a look here, I'm applying three clases to the same item with spaces-->
             <p class="bold right no-divider">% Daily Value *</p>
             <div class="divider"></div>
+            <!--The span tags here help to set the "items" in the flexbox so they can be organized on the left, right and center of the table.-->
+            <!--And they also help with styling the text with no interruption.-->
             <p><span><span class="bold">Total Fat</span> 8g</span> <span class="bold">10%</span></p>
             <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
             <div class="divider"></div>
+            <!--The <i> tag italicize the text-->
             <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
             <div class="divider"></div>
             <p><span><span class="bold">Cholesterol</span> 0mg</span> <span class="bold">0%</span></p>

@@ -35,12 +35,12 @@ body {
 header h1 {
     text-align: center;
     margin: -4px 0;
-    letter-spacing: 0.15px
+    letter-spacing: 0.15px /*It adjusts the space betwen each character of text in an element*/
 }
 
 p {
     margin: 0;
-    display: flex;
+    display: flex; /*We create the flex-table so our items inside can be organized.*/
     justify-content: space-between;
 }
 
@@ -50,7 +50,7 @@ p {
 }
 
 .bold {
-    font-weight: 800;
+    font-weight: 800; /*It bolders the text*/
 }
 
 .large {
@@ -68,14 +68,14 @@ p {
 }
 
 .small-text {
-    font-size: 0.85rem;
+    font-size: 0.85rem; /*rem is basically the percentage of the font-size of the HTML.*/
 }
 
 
 .calories-info {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-end; /*flex-end means that the items are going to be organized from the bottom to the top.*/
 }
 
 .calories-info h2 {
@@ -106,6 +106,8 @@ p {
     margin-left: 2em;
 }
 
+/*It selects all the elements that don't match the given CSS rule.*/
+/*In this case, It selects all the 'p' elements that don't have the class "no-divider"*/
 .daily-value p:not(.no-divider) {
     border-bottom: 1px solid #888989;
 }
