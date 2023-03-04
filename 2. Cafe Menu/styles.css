@@ -1,43 +1,50 @@
 /*For example, this tag means that every html tag with "body" is going
 to have the same style*/
 body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-    font-family: sans-serif;
-    padding: 20px; /*It also exists padding-left, padding-right, etc.*/
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+  /*It also exists padding-left, padding-right, etc.*/
 }
-  
+
 h1 {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
-  
+
 h2 {
- font-size: 30px;
+  font-size: 30px;
 }
- 
+
 /*Here, this is a class, and can be applied to any html tag usign the attribute "class"*/
 .established {
   font-style: italic;
 }
-  
+
 /*This is a way of making that multiples tags have the same style*/
-h1, h2, p {
+h1,
+h2,
+p {
   text-align: center;
 }
- 
+
 .menu {
   width: 80%;
   background-color: burlywood;
-  margin-left: auto; /*How to center an element (1)*/
-  margin-right: auto; /*How to center an element (2)*/
-  padding: 20px; /*Area between its content and its border*/
+  margin-left: auto;
+  /*How to center an element (1)*/
+  margin-right: auto;
+  /*How to center an element (2)*/
+  padding: 20px;
+  /*Area between its content and its border*/
   max-width: 500px;
 }
-  
+
 img {
   margin-top: -25px;
-  display: block; /*It means that the content is goint to start in a new line and takes the screen width available*/
+  display: block;
+  /*It means that the content is goint to start in a new line and takes the screen width available*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,23 +54,27 @@ hr {
   background-color: brown;
   border-color: brown;
 }
- 
+
 .bottom-line {
   margin-top: 25px;
 }
-  
-h1, h2 {
-  font-family: Impact, serif; /*In case the browser doesn't support the font Impact, it applies serif*/
+
+h1,
+h2 {
+  font-family: Impact, serif;
+  /*In case the browser doesn't support the font Impact, it applies serif*/
 }
-  
+
 .item p {
-  display: inline-block; /* The elements can behave as inline elements*/
+  display: inline-block;
+  /* The elements can behave as inline elements*/
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
 }
-  
-.flavor, .dessert {
+
+.flavor,
+.dessert {
   text-align: left;
   width: 75%;
 }
@@ -72,32 +83,32 @@ h1, h2 {
   text-align: right;
   width: 25%;
 }
-  
+
 /* FOOTER */
-  
+
 footer {
   font-size: 14px;
 }
-  
+
 .address {
   margin-bottom: 5px;
 }
 
 /*Style for <a> tag*/
 a {
-    color: black;
-  }
-  
+  color: black;
+}
+
 /*Style when it's visited*/
 a:visited {
   color: black;
 }
-  
+
 /*Style when it's hovered*/
 a:hover {
   color: brown;
 }
-  
+
 /*Style when it's active*/
 a:active {
   color: brown;
