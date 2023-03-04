@@ -1,77 +1,87 @@
 <!DOCTYPE html> <!--It is an "information" to the browser about what document type to expect-->
 <html lang="en"> <!--Language: English-->
-  <head> <!--Here we save meta information-->
-    <meta charset="UTF-8"> <!--Indicates how to encode characters for the page-->
-    <title>CatPhotoApp</title> <!--Title bar-->
-  </head>
-  <body>
-    <!--It is used to identify certain sections of an HTML website-->
-    <main>
-      <!---->
-      <!--This is the way of doing a comment, say hi!-->
-      <!--These are heading elements, used to signify the importance of content below them. The are jerarquic-->
-      <h1>CatPhotoApp</h1>
-      <section>
-        <h2>Cat Photos</h2>
-        <!--Paragraph of text, and _blank is for opening in a new tab-->
-        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <!--img is for adding pictures-->
-        <!--href is for adding an hyperlink to our picture-->
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-      </section>
-      <section> <!--We should separate our website by sections-->
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul> <!--Unordered list-->
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
-        </ul>
-        <figure> <!--It's used to add a caption to an element-->
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol> <!--Ordered List-->
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ol>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
-        </figure>
-      </section>
-      <section>
-        <h2>Cat Form</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo"> <!--So this helps me to send form data. Set action to where you want to send it-->
-          <fieldset> <!--It groups certain elements-->
-            <legend>Is your cat an indoor or outdoor cat?</legend> <!--A description of our fieldset-->
-            <!--Long explanation here:-->
-            <!--id: Unique id for our element. Frontend works with this-->
-            <!--name: Backend works with his-->
-            <!--value: Wether it's a password, text, etc.-->
-            <!--type: Radio button/Checkbox-->
-            <!--Checked: The default value checked-->
-            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-          </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <!--for: It makes a bound to a certain element-->
-            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
-          </fieldset>
-          <input type="text" name="catphotourl" placeholder="cat photo URL" required> <!--It makes an input text-->
-          <button type="submit">Submit</button> <!--Button, in this case its type is for submiting forms-->
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>
-        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-      </p>
-    </footer>
-  </body>
+
+<head> <!--Here we save meta information-->
+  <meta charset="UTF-8"> <!--Indicates how to encode characters for the page-->
+  <title>CatPhotoApp</title> <!--Title bar-->
+</head>
+
+<body>
+  <!--It is used to identify certain sections of an HTML website-->
+  <main>
+    <!---->
+    <!--This is the way of doing a comment, say hi!-->
+    <!--These are heading elements, used to signify the importance of content below them. The are jerarquic-->
+    <h1>CatPhotoApp</h1>
+    <section>
+      <h2>Cat Photos</h2>
+      <!--Paragraph of text, and _blank is for opening in a new tab-->
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+      <!--img is for adding pictures-->
+      <!--href is for adding an hyperlink to our picture-->
+      <a href="https://freecatphotoapp.com"><img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="A cute orange cat lying on its back."></a>
+    </section>
+    <section> <!--We should separate our website by sections-->
+      <h2>Cat Lists</h2>
+      <h3>Things cats love:</h3>
+      <ul> <!--Unordered list-->
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <figure> <!--It's used to add a caption to an element-->
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+          alt="A slice of lasagna on a plate.">
+        <figcaption>Cats <em>love</em> lasagna.</figcaption>
+      </figure>
+      <h3>Top 3 things cats hate:</h3>
+      <ol> <!--Ordered List-->
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+          alt="Five cats looking around a field.">
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Cat Form</h2>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <!--So this helps me to send form data. Set action to where you want to send it-->
+        <fieldset> <!--It groups certain elements-->
+          <legend>Is your cat an indoor or outdoor cat?</legend> <!--A description of our fieldset-->
+          <!--Long explanation here:-->
+          <!--id: Unique id for our element. Frontend works with this-->
+          <!--name: Backend works with his-->
+          <!--value: Wether it's a password, text, etc.-->
+          <!--type: Radio button/Checkbox-->
+          <!--Checked: The default value checked-->
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+        </fieldset>
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <!--for: It makes a bound to a certain element-->
+          <input id="loving" type="checkbox" name="personality" value="loving" checked> <label
+            for="loving">Loving</label>
+          <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+          <input id="energetic" type="checkbox" name="personality" value="energetic"> <label
+            for="energetic">Energetic</label>
+        </fieldset>
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required> <!--It makes an input text-->
+        <button type="submit">Submit</button> <!--Button, in this case its type is for submiting forms-->
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>
+      No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+    </p>
+  </footer>
+</body>
+
 </html>

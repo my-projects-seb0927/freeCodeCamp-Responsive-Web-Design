@@ -11,13 +11,14 @@ h1 {
 .marker {
     width: 200px;
     height: 25px;
-    margin: 10px auto; /*The space between the markers*/
+    margin: 10px auto;
+    /*The space between the markers*/
     /*Auto means to center the markers*/
 }
 
 /*The cap of our markers*/
 .cap {
-    width: 60px; 
+    width: 60px;
     height: 25px;
 }
 
